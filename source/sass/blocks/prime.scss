@@ -1,0 +1,83 @@
+.prime {
+  position: relative;
+
+  h2 {
+    margin: 0 0 11px 95px;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 66px;
+    color: $color-alice-blue;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+    @include vp-1023 {
+      margin-left: 0;
+      font-size: 50px;
+      line-height: 61px;
+      text-shadow: none;
+    }
+
+    @include vp-767 {
+      font-size: 36px;
+      line-height: 45px;
+    }
+  }
+
+  p {
+    margin: 0 0 0 95px;
+    font-size: 20px;
+    line-height: 24px;
+    color: $color-alice-blue;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+    @include vp-1023 {
+      margin: 0;
+      font-size: 18px;
+      line-height: 22px;
+      text-shadow: none;
+    }
+
+    @include vp-767 {
+      font-size: 16px;
+    }
+  }
+}
+
+.prime__wrapper {
+  padding-top: 269px;
+  padding-bottom: 278px;
+
+  @include vp-1023 {
+    padding-top: 271px;
+    padding-bottom: 276px;
+  }
+
+  @include vp-767 {
+    padding-top: 176px;
+    padding-bottom: 179px;
+  }
+}
+
+.prime__bg {
+  position: absolute;
+  width: 100vw;
+  min-width: 320px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+  background-color: $color-prussian-blue;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  z-index: -1;
+
+  @include vp-1023 {
+    filter: none;
+  }
+
+  @include vp-767 {
+    object-fit: cover;
+    object-position: 45% 50%;
+    height: calc(100% + 68px);
+  }
+}
