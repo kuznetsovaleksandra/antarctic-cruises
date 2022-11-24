@@ -1,5 +1,8 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
+import {form} from './modules/form.js';
+import {initMap} from './modules/map.js';
+import {mobileMenu} from './modules/mob-menu.js';
 
 // ---------------------------------
 
@@ -9,6 +12,9 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
+  form();
+  initMap();
+  mobileMenu();
 
   // Modules
   // ---------------------------------
