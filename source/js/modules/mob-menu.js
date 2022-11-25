@@ -8,7 +8,6 @@ const navMainToggle = document.querySelector('.header__menu-toggle');
 const navMainBurger = document.querySelector('.header__menu-toggle-burger');
 const navMainMenu = document.querySelector('.header-wrapper');
 const header = document.querySelector('.header');
-const navLinks = header.querySelectorAll('.header__link');
 
 const onMenuEscKeydown = (evt) => {
   const isEscKey = evt.key === 'Escape' || evt.key === 'Esc';
@@ -52,7 +51,7 @@ const openMenu = () => {
 
 
 export const mobileMenu = () => {
-  if (navMainMenu) {
+  if (navMainMenu && navMainToggle && header) {
     navMainToggle.classList.add('header__menu-toggle--JS-menu');
     navMainMenu.classList.add('header-wrapper--close');
     header.classList.add('header--close');
@@ -64,7 +63,7 @@ export const mobileMenu = () => {
         openMenu();
       }
     });
-
+    const navLinks = header.querySelectorAll('.header__link');
     navLinks.forEach((link) => {
       link.addEventListener('click', () => {
         if (navMainBurger.classList.contains('header__menu-toggle-burger--close')) {
