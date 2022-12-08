@@ -985,7 +985,7 @@ button,
 }
 
 .about h2 {
-  margin: -4px 0 24px;
+  margin: 59px 0 24px;
   font-weight: 600;
   font-size: 28px;
   line-height: 42px;
@@ -1003,9 +1003,6 @@ button,
   -ms-grid-columns: (1fr)[2];
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .advantages {
@@ -1225,7 +1222,6 @@ button,
   justify-content: space-between;
   top: 39px;
   left: 0;
-  width: 100%;
   height: calc(100% - 39px);
   padding: 30px 25px 35px;
 }
@@ -1516,9 +1512,6 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
   min-width: 133px;
 }
 
@@ -1983,7 +1976,7 @@ button,
   }
 
   .catalog {
-    padding: 57px 0 65px;
+    padding: 57px 0 59px;
   }
 
   .catalog__title {
@@ -2000,7 +1993,7 @@ button,
 
   .catalog__item {
     padding: 35px 25px 17px;
-    aspect-ratio: 135/193;
+    aspect-ratio: 133/192;
   }
 
   .catalog__item h3 {
@@ -2018,7 +2011,7 @@ button,
   }
 
   .booking {
-    padding: 59px 0 65px;
+    padding: 60px 0 65px;
   }
 
   .booking__title {

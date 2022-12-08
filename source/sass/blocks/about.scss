@@ -11,7 +11,8 @@
   }
 
   h2 {
-    margin: -4px 0 24px;
+    // margin: -4px 0 24px;
+    margin: 59px 0 24px;
     font-weight: 600;
     font-size: 28px;
     line-height: 42px;
@@ -49,7 +50,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
-  align-items: center;
+  // align-items: center;
 
   @include vp-1023 {
     gap: 20px;
